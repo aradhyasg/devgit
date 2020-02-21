@@ -1,0 +1,3 @@
+Redhat is not used here .
+instead we can use Amazon Linux
+
