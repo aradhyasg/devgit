@@ -1,0 +1,48 @@
+cat > conf1
+  119  ls
+  120  ls -l conf1 
+  121  getfacl conf1 
+  122  su - kotresh 
+  123  su - deeksha
+  124  usermod -s /bin/bash deeksha
+  125  su - deeksha
+  126  setfacl -m u:deeksha:rw /mnt/conf1 
+  127  ls -l conf1 
+  128  setfacl -m u:kotresh:--- conf1 
+  129  su - kotresh 
+  130  history 
+  131  mkdir redhat
+  132  ls
+  133  cd redhat
+  134  ls
+  135  touch f{1..4}
+  136  ls
+  137  cd ..
+  138  setfacl -m u:kotresh:rwx redhat/
+  139  cd redhat/
+  140  ls
+  141  ll
+  142  cd ..
+  143  setfacl -Rm u:kotresh:rwx redhat/
+  144  cd redhat/
+  145  ll
+  146  touch g1
+  147  ll
+  148  cd ..
+  149  setfacl -m d:u:kotresh:rwx redhat/
+  150  getfacl redhat/
+  151  cd redhat/
+  152  ls
+  153  touch d1
+  154  ll
+  155  cd ..
+  156  setfacl -k redhat/ 
+  157  getfacl redhat/
+  158  setfacl -x u:deeksha conf1 
+  159  getfacl conf1 
+  160  ls
+  161  ll
+  162  setfacl -Rb *
+  163  ll
+  164  history 
+
