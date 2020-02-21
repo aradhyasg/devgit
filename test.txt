@@ -1,1 +1,2 @@
 Hi this file is an example file for testing environment
+This line is updated from Command line module
