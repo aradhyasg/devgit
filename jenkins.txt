@@ -1,0 +1,1 @@
+Hi this is jenkins file for demonstrating the git integration with Jenkins server
