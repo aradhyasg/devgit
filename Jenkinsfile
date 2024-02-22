@@ -11,12 +11,13 @@ pipeline {
             steps {
                 sh 'date >> test.txt' // Replace with your specific test command
             }
-        stage('Integration Test'){
-	    steps{
+        stage('Integration Test') {
+	    steps {
 		echo "Hi this is intergration"
             }
 
         }
     }
+}
 }
 
