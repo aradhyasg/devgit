@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Run Tests') {
             steps {
-                sh 'date >> test.txt' // Replace with your specific test command
+                sh 'date' // Replace with your specific test command
             }
         }
         stage('Integration Test') {
             steps {
-                echo "Hi this is integration"
+                echo "Hi this is testing evironment to build an application"
             }
         }
     }
